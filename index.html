@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Mari Singcoy | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        #hero-text {
+            font-size: 60px;
+            font-family: 'Prompt', sans-serif;
+            color: #A52A2A;
+        }
+    </style>
+    <script>
+        const text = "Welcome to My Portfolio!";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("hero-text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 70);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", typeWriter);
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="brand-name">Lana Mari Singcoy</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1 id="hero-text"></h1>
+        <p><b>Hi! I'm Lana Mari Singcoy, a student at Cavite State University - Silang Campus <br>
+            Exploring Web Development and Technology.</b></p>
+        <button onclick="location.href='projects.html'">Explore My Work</button>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <div id="footer">
+        <p id="footer-details">Made by Lana Singcoy | © 2025 All Rights Reserved.</p>
+        <div class="social-media-links">
+          <a href="https://www.facebook.com/singcoy.lana/"><img class="social-media-icon" src="images/facebook.png" alt="facebook-logo"></a>
+          <a href="https://www.instagram.com/lana.sngcy/"><img class="social-media-icon" src="images/instagram.png" alt="instagram-logo"></a>
+          <a href="https://www.linkedin.com/in/lana-singcoy-45162b286/"><img class="social-media-icon" src="images/linkedin.png" alt="linkedin-logo"></a>
+        </div>
+      </div>
+</body>
+</html>

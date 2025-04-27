@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Lana Mari Singcoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="brand-name">Lana Mari Singcoy</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content about-section">
+        <h2>ABOUT ME</h2>
+        <div class="about-container">
+                <br>
+                <br>
+            <img src="images/pic1.jpg" alt="Lana Mari Singcoy" class="about-image">
+           <br>
+            <div class="about-text">
+                <p>Hi, I'm Lana Mari M. Singcoy, a 3rd year BSIT student at Cavite State University - Silang Campus.</p>
+                <p>I love exploring web development, design, and new technologies. I'm currently working on some school projects and improving my frontend skills.</p>
+                <p>Outside of tech, I enjoy traveling and going on nature trips — nothing beats a good adventure with fresh air and scenic views! 🌿✈️</p>
+                <p>To know me more, you can view my Resume below;</p>
+                <br>
+                               <!-- Resume Button -->
+                <button class="resume-button" onclick="openModal()">View My Resume</button>
+
+
+                <!-- Resume Modal -->
+                <div id="resumeModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="resumeImage" src="images/Updated CV.jpg" alt="My Resume" onclick="toggleZoom(this)">
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <hr>
+    <div id="footer">
+        <p id="footer-details">Made by Lana Singcoy | © 2025 All Rights Reserved.</p>
+        <div class="social-media-links">
+          <a href="https://www.facebook.com/singcoy.lana/"><img class="social-media-icon" src="images/facebook.png" alt="facebook-logo"></a>
+          <a href="https://www.instagram.com/lana.sngcy/"><img class="social-media-icon" src="images/instagram.png" alt="instagram-logo"></a>
+          
+        </div>
+      </div>
+</body>
+<script>
+    function openModal() {
+      document.getElementById("resumeModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("resumeModal").style.display = "none";
+    }
+    </script>
+    <script>
+        function toggleZoom(img) {
+            img.classList.toggle("zoomed");
+        }
+        </script>
+        
+    
+</html>

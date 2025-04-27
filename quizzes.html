@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes | Lana Mari Singcoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="brand-name">Lana Mari Singcoy</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>QUIZZES</h2>
+    
+        <!-- Post-Test Section -->
+        <div class="quiz-section">
+            <h3>Post-Test</h3>
+            <div class="quiz-images">
+                <img src="images/pt2.jpg" alt="Post-Test 1" class="quiz-image" onclick="openModal(this)">
+                <img src="images/pt3.jpg" alt="Post-Test 2" class="quiz-image" onclick="openModal(this)">
+                <img src="images/pt4.jpg" alt="Post-Test 2" class="quiz-image" onclick="openModal(this)">
+                <img src="images/pt5.jpg" alt="Post-Test 2" class="quiz-image" onclick="openModal(this)">
+                <!-- Pwede ka pa magdagdag ng more Post-Test images dito -->
+            </div>
+        </div>
+    
+        <!-- Long Quiz Section -->
+        <div class="quiz-section">
+            <h3>Long Quiz</h3>
+            <div class="quiz-images">
+                <img src="images/longquiz.jpg" alt="Long Quiz 1" class="quiz-image" onclick="openModal(this)">
+                <!-- Pwede ka pa magdagdag ng more Long Quiz images dito -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for Zoom Effect -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    
+     
+    <br>
+    <br>
+    <hr>
+    <div id="footer">
+        <p id="footer-details">Made by Lana Singcoy | © 2025 All Rights Reserved.</p>
+        <div class="social-media-links">
+          <a href="https://www.facebook.com/singcoy.lana/"><img class="social-media-icon" src="images/facebook.png" alt="facebook-logo"></a>
+          <a href="https://www.instagram.com/lana.sngcy/"><img class="social-media-icon" src="images/instagram.png" alt="instagram-logo"></a>
+          
+        </div>
+      </div>
+      <script>
+        function openModal(imgElement) {
+            var modal = document.getElementById("modal");
+            var modalImg = document.getElementById("modal-img");
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+        </script>
+        
+</body>
+</html>
